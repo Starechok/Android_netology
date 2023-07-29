@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentFeed">
+
+    <fragment
+        android:id="@+id/fragmentFeed"
+        android:name="ru.netology.nmedia.ui.FeedFragment"
+        android:label="frahment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_fragmentFeed_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_cardPostFragment"
+            app:destination="@id/cardPostFragment" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_fragmentFeed_self"
+            app:destination="@id/fragmentFeed" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_fragmentImage"
+            app:destination="@id/fragmentImage" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_fragmentFeed_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="ru.netology.nmedia.ui.NewPostFragment"
+        android:label="fragment_new_post"
+        tools:layout="@layout/fragment_new_post" >
+        <action
+            android:id="@+id/action_newPostFragment_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_newPostFragment_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardPostFragment"
+        android:name="ru.netology.nmedia.ui.CardPostFragment"
+        android:label="fragment_card_post"
+        tools:layout="@layout/fragment_card_post" >
+        <action
+            android:id="@+id/action_cardPostFragment_to_fragmentImage"
+            app:destination="@id/fragmentImage" />
+        <action
+            android:id="@+id/action_cardPostFragment_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_cardPostFragment_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentImage"
+        android:name="ru.netology.nmedia.ui.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="ru.netology.nmedia.ui.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="ru.netology.nmedia.ui.SignUpFragment"
+        android:label="FragmentSignUp" />
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="ru.netology.nmedia.ui.EditPostFragment"
+        android:label="EditPostFragment" >
+        <action
+            android:id="@+id/action_editPostFragment_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+    </fragment>
+
+</navigation>

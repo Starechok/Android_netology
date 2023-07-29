@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="newerposts">#5d99c6</color>
+    <color name="newerpoststext">#FFFFFF</color>
+    <color name="divider_color">#ccc</color>
+    <color name="image_background">#000</color>
+</resources>
